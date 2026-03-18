@@ -29,7 +29,6 @@ export function SignUp() {
     e.preventDefault()
     console.log(form)
     try {
-      console.log('PINTO')
       const storedUsers = localStorage.getItem('users')
       if (!storedUsers) {
         localStorage.setItem('users', JSON.stringify([form]))
